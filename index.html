@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunkin' Lebanon</title>
+
+    <link rel="stylesheet" href="css/index.css">
+      <link rel="icon" type="image/png" href="img/app.png">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+
+        <img class="logo" src="img/dunkin.png" alt="Dunkin Lebanon">
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#" onclick="goHome(); return false;">
+    <i class="fa-solid fa-house"></i>
+    Home
+</a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    Menu
+                </a>
+            </li>
+
+            <li>
+                <a href="#" onclick="openContactModal(); return false;">
+    <i class="fa-solid fa-phone"></i>
+    Contact
+</a>
+            </li>
+
+            <li>
+                <a href="#" id="mobile-app-link">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    Mobile App
+                </a>
+            </li>
+
+        </ul>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="news-card">
+
+            <div class="news-image">
+                <img src="img/news/ube.png" alt="">
+            </div>
+
+            <div class="news-content">
+
+                <span class="news-tag">
+                    NEW DRINK
+                </span>
+
+                <h1>Introducing the New Ube Collection</h1>
+
+                <p>
+    Meet the newest stars of the season: Ube Zero Sugar, Ube Matcha,
+    and Ube Vanilla. Crafted with the unique flavor and signature purple
+    color of ube, these refreshing drinks deliver a deliciously smooth
+    experience in every sip. Try the full collection for a limited time
+    at Dunkin' Lebanon.
+</p>
+
+                <a href="#" class="news-btn" onclick="openUbeModal(); return false;">
+    Learn More
+</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="order-section">
+
+    <div class="order-card">
+
+        <div class="order-content">
+
+            <span class="order-tag">
+                DELIVERY
+            </span>
+
+            <h1>Order Now on Toters</h1>
+
+            <p>
+                Craving your favorite Dunkin' coffee, donuts,
+                sandwiches, or refreshers? Order directly through
+                Toters and get Dunkin' delivered right to your door
+                anywhere in Lebanon.
+            </p>
+
+            <a href="#"
+               class="order-btn"
+               onclick="openToters(); return false;">
+                Order Now
+            </a>
+
+        </div>
+
+        <div class="order-image">
+
+            <img src="img/toters.png" alt="Toters">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="app-section">
+
+    <div class="app-card">
+
+        <div class="app-image">
+            <img src="img/app.png" alt="Dunkin App">
+        </div>
+
+        <div class="app-content">
+
+            <span class="app-tag">
+                MOBILE APP
+            </span>
+
+            <h2>Download The Dunkin' Lebanon App</h2>
+
+            <p>
+                Order ahead, collect rewards, receive exclusive
+                offers, and enjoy a faster Dunkin' experience
+                wherever you go.
+            </p>
+
+            <button class="app-btn"
+                    onclick="openAppStore()">
+                Download App
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="social-section">
+
+    <h2>Follow Dunkin' Lebanon</h2>
+
+    <p>
+        Stay updated with our newest drinks,
+        promotions and giveaways.
+    </p>
+
+    <div class="social-icons">
+
+        <a href="https://www.instagram.com/dunkinleb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/dunkinleb">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@dunkinleb?is_from_webapp=1&sender_device=pc">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+    <footer class="footer">
+    © 2026 Dunkin' Lebanon. All Rights Reserved.
+</footer>
+
+<div class="modal-overlay" id="ubeModal">
+
+    <div class="modal-box">
+
+        <button class="close-btn" onclick="closeUbeModal()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+       <div class="modal-page active" id="page1">
+
+    <div class="drink-preview">
+        <img src="img/news/ube.png" alt="Ube Zero Sugar">
+    </div>
+
+    <h2>Ube Zero Sugar</h2>
+
+    <p class="price">$7</p>
+
+    <h3 class="ingredients-title">What's inside</h3>
+
+    <ul>
+        <li>Premium Ube Flavoring</li>
+        <li>Fresh Milk</li>
+        <li>Ice</li>
+        <li>Zero-Sugar Sweetener</li>
+    </ul>
+
+</div>
+
+       <div class="modal-page" id="page2">
+
+    <div class="drink-preview">
+        <img src="img/news/ube.png" alt="Ube Matcha">
+    </div>
+
+    <h2>Ube Matcha</h2>
+
+    <p class="price">$7</p>
+
+    <h3 class="ingredients-title">What's inside</h3>
+
+    <ul>
+        <li>Premium Ube Flavoring</li>
+        <li>Japanese Matcha</li>
+        <li>Fresh Milk</li>
+        <li>Ice</li>
+    </ul>
+
+</div>
+
+       <div class="modal-page" id="page3">
+
+    <div class="drink-preview">
+        <img src="img/news/ube.png" alt="Ube Vanilla">
+    </div>
+
+    <h2>Ube Vanilla</h2>
+
+    <p class="price">$7</p>
+
+    <h3 class="ingredients-title">What's inside</h3>
+
+    <ul>
+        <li>Premium Ube Flavoring</li>
+        <li>Vanilla Syrup</li>
+        <li>Fresh Milk</li>
+        <li>Ice</li>
+    </ul>
+
+</div>
+        <div class="modal-nav">
+
+            <button onclick="previousPage()">
+                ← Previous
+            </button>
+
+            <span id="pageIndicator">
+                1 / 3
+            </span>
+
+            <button onclick="nextPage()">
+                Next →
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<nav class="mobile-nav">
+
+    <a href="#" onclick="goHome(); return false;">
+    <i class="fa-solid fa-house"></i>
+    <span>Home</span>
+</a>
+
+    <a href="#">
+        <i class="fa-solid fa-mug-hot"></i>
+        <span>Menu</span>
+    </a>
+
+    <a href="#" onclick="openContactModal(); return false;">
+    <i class="fa-solid fa-phone"></i>
+    Contact
+</a>
+
+    <a href="#" id="mobile-app-link-bottom">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <span>App</span>
+    </a>
+
+</nav>
+
+
+<div class="modal-overlay" id="contactModal">
+
+    <div class="modal-box">
+
+        <button class="close-btn" onclick="closeContactModal()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-page active">
+
+            <h2>Customer Care</h2>
+
+            <p class="price" style="font-size:18px; font-weight:600;">
+                +961 3 599 934
+            </p>
+
+            <div style="display:flex; flex-direction:column; gap:12px; margin-top:20px;">
+
+                <a href="tel:+9613599934" class="news-btn">
+                    📞 Call Now
+                </a>
+
+                <a href="https://wa.me/96103599934" target="_blank" class="news-btn"
+                   style="background:#25D366;">
+                    💬 WhatsApp Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
